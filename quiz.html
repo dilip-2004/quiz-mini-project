@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="main">
+    <div class="side-bar">
+        <ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <p class="questions"></p>
+        <table>
+            <tr>
+                <td><p class="option-a" onclick="addanswer('option-a');"></p></td>
+                <td><p class="option-b" onclick="addanswer('option-b');"></p></td>
+            </tr>
+            <tr>
+                <td><p class="option-c" onclick="addanswer('option-c');"></p></td>
+                <td><p class="option-d" onclick="addanswer('option-d');"></p></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+
+    <div class="buttons">
+        <button class="pre-button btn" onclick="previous();">previous</button>
+        <button class="next-button btn" onclick="next();">next</button>
+    </div><br><br>
+    <button onclick="showanswer();
+    " class="submit">submit answer</button>
+    <script src="quiz.js"></script>
+</body>
+</html>
